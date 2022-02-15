@@ -87,26 +87,43 @@ button:active {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    align-items: center;
-
+    align-items: center; 
     margin: 20px 0;
+}
+
+.passwords {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 210px;
+    height: 40px;
+    margin: 0;
+    background-color: var(--input-background);
+    border-radius: 6px;
 }
 
 input {
     text-align: center;
     text-decoration: none;
-
-    width: 210px;
-    height: 40px;
-    margin: 0;
-
+    
+    color: var(--placeholder);
     background-color: var(--input-background);
     border: none;
-    border-radius: 6px;
-
-    color: var(--placeholder);
 }
 
 .green {
     color: var(--green-span)
+}
+
+.fa-clipboard {
+    color: var(--green-password)
+}
+
+.fa-clipboard:hover {
+    cursor: pointer;
+}
+
+.fa-clipboard:active {
+    color: #0d684a
 }
