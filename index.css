@@ -28,16 +28,16 @@ main {
 }
 
 .container {
-    width: 550px;
-    height: 550px;
-    margin: 0 auto;
+    width: 600px;
+    margin: 10% auto;
     padding: 40px;
-
+    
     background-color: var(--container-color);
 }
 
 .top-container {
-
+    margin: 0 25px;
+    border-bottom: 1px solid var(--input-background)
 }
 
 .top-container h2 {
@@ -51,7 +51,15 @@ main {
 }
 
 button {
+    width: 223px;
+    height: 42px;
+    margin: 15px 0 20px;
 
+    color: #FFFFFF;
+    background-color: var(--green-button);
+
+    border: none;
+    border-radius: 6px;
 }
 
 .icon {
@@ -64,10 +72,31 @@ button {
 
 .bottom-container {
 
+    margin: 30px auto;
+}
+
+.input-div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+
+    margin: 20px 0;
 }
 
 input {
     text-align: center;
+    text-decoration: none;
+
+    width: 210px;
+    height: 40px;
+    margin: 0;
+
+    background-color: var(--input-background);
+    border: none;
+    border-radius: 6px;
+
+    color: var(--placeholder);
 }
 
 .green {
