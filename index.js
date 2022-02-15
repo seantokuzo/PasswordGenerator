@@ -9,10 +9,11 @@ const copy2 = document.getElementById('copy2')
 const copy3 = document.getElementById('copy3')
 const copy4 = document.getElementById('copy4')
 let firstClick = true
+let num = 10
 
 function getOnePassword() {
     let newPassword = []
-    for (let i = 0; i < 10; i++) {
+    for (let i = 0; i < num; i++) {
         let randomIndex = Math.floor(Math.random() * characters.length)
         newPassword.push(characters[randomIndex])
     }
@@ -84,8 +85,8 @@ function copyPasswordFour() {
 
 const myButton = document.getElementById('button')
 myButton.addEventListener('click', getAllPasswords)
-
-// inputOne.addEventListener('click', copyPasswordOne)
-// inputTwo.addEventListener('click', copyPasswordTwo)
-// inputThree.addEventListener('click', copyPasswordThree)
-// inputFour.addEventListener('click', copyPasswordFour)
+const myLength = document.getElementById('length-input')
+myLength.addEventListener('change', (event) => {
+    console.log(event)
+    num = event.target.value
+})

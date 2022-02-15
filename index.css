@@ -50,10 +50,22 @@ main {
     color: var(--medium-grey);
 }
 
+.button-length-div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: 80px 0 30px;
+}
+
 #button {
     width: 223px;
-    height: 42px;
-    margin: 15px 0 20px;
+    height: 47px;
+    margin: 15px 0;
+
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 500;
 
     color: #FFFFFF;
     background-color: var(--green-button);
@@ -69,6 +81,20 @@ button:hover {
 button:active {
     box-shadow: inset 5px 5px 10px -3px rgba(0, 0, 0, 0.7);
 }
+
+.length-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.length-div p {
+    margin: 0 0 5px;
+}
+
+
 
 .icon {
     color: #FFFFFF;
@@ -112,8 +138,18 @@ input {
     border: none;
 }
 
+#length-input {
+    padding: 5px 20px;
+    border-radius: 5px;
+    color: var(--green-button)
+}
+
 .green {
     color: var(--green-span)
+}
+
+.fa-bolt {
+    margin-right: 10px;
 }
 
 .fa-clipboard {
@@ -126,4 +162,14 @@ input {
 
 .fa-clipboard:active {
     color: #0d684a
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
 }

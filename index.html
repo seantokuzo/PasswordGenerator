@@ -19,23 +19,36 @@
             <div class="top-container">
                 <h2>Generate a </br><span class="green">random password</span></h2>
                 <h5>Never use an insecure password again.</h5>
-                <button type="button" id="button"><i class="fa-solid fa-bolt icon"></i> Generate passwords</button>
+                <div class="button-length-div">
+                    <button type="button" id="button"><i class="fa-solid fa-bolt icon"></i> Generate passwords</button>
+                    <div class="length-div">
+                        <p>Choose your password length</p>
+                        <div>
+                            <input type="number" min="8" max="15" value="10" id="length-input">
+                            <i class="fa-solid fa-up-down icon"></i>
+                        </div>
+                    </div>
+                </div>
             </div>
             <div class="bottom-container">
                 <div class="input-div">
                     <div class="passwords">
-                    <input type="text" value="---" id="input-1" disabled="true"><p id="copy1"></p>
+                        <input type="text" value="---" id="input-1" disabled="true">
+                        <p id="copy1"></p>
                     </div>
                     <div class="passwords">
-                    <input type="text" value="---" id="input-2" disabled="true"><p id="copy2"></p>
+                        <input type="text" value="---" id="input-2" disabled="true">
+                        <p id="copy2"></p>
                     </div>
                 </div>
                 <div class="input-div">
                     <div class="passwords">
-                    <input type="text" value="---" id="input-3" disabled="true"><p id="copy3"></p>
+                        <input type="text" value="---" id="input-3" disabled="true">
+                        <p id="copy3"></p>
                     </div>
                     <div class="passwords">
-                    <input type="text" value="---" id="input-4" disabled="true"><p id="copy4"></p>
+                        <input type="text" value="---" id="input-4" disabled="true">
+                        <p id="copy4"></p>
                     </div>
                 </div>
             </div>
