@@ -1,0 +1,75 @@
+:root {
+    --background: #1C1C1C;
+    --background-light: #ECFDF5;
+    --container-color: #1F2937;
+    --green-span: #4ADF86;
+    --green-button: #10B981;
+    --green-password: #55F991;
+    --medium-grey: #D5D4D8;
+    --input-background: #273549;
+    --placeholder: #202B3C;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+
+    font-family: 'Inter', sans-serif;
+
+    color: #FFFFFF;
+    background-color: var(--background);
+}
+
+main {
+
+}
+
+.container {
+    width: 550px;
+    height: 550px;
+    margin: 0 auto;
+    padding: 40px;
+
+    background-color: var(--container-color);
+}
+
+.top-container {
+
+}
+
+.top-container h2 {
+    font-family: 'Karla';
+    font-size: 40px;
+}
+
+.top-container h5 {
+
+    color: var(--medium-grey);
+}
+
+button {
+
+}
+
+.icon {
+    color: #FFFFFF;
+}
+
+.title {
+
+}
+
+.bottom-container {
+
+}
+
+input {
+    text-align: center;
+}
+
+.green {
+    color: var(--green-span)
+}
